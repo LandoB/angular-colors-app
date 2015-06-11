@@ -1,4 +1,4 @@
-app.controller('WebCamsCtrl', function($scope){
-	$scope.colors = "This is the WebCamsCtrl";
+app.controller('WebcamsCtrl', ['$scope', function($scope){
+  $scope.title='Webcams';
 
-})
+}]);

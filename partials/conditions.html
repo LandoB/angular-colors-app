@@ -1,1 +1,13 @@
-<h1>This is the CONDITIONS page</h1>
+<h4>{{title}}</h4>
+<h5>Enter your Zipcode</h5>
+<form>
+  <div class='form-group'>
+    <input id='zip' ng-model='zip' name='zip'>
+  </div>
+  <button ng-click='getConditions()' class='btn btn-success'>Get Conditions</button>
+</form>
+
+<h1> Your temp is:</h1>
+<h1>{{temp}}</h1>
+
+

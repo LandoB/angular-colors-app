@@ -1,26 +1,11 @@
 var app = angular.module('myApp', ['ngRoute']);
 
-// Declare app level module which depends on filters, and services
+app.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+    .when("/", {templateUrl: "partials/home.html", controller: "HomeCtrl"})
+    .when("/conditions", {templateUrl: "partials/conditions.html", controller: "ConditionsCtrl"})
+    .when('/webcams', {templateUrl:'partials/webcams.html', controller:'WebcamsCtrl'})
+    .when('/tenday', {templateUrl:'partials/tenday.html', controller:'TendayCtrl'})
+    .otherwise("/404", {templateUrl: "partials/404.html", controller: "ErrCtrl"});
+}]);
 
-app.config(function ($routeProvider) {
-  $routeProvider.
-    when('/', {
-      templateUrl: 'partials/home',
-      controller: 'HomeCtrl'
-    }).
-    when('/conditions', {
-      templateUrl: 'partials/conditions',
-      controller: 'ConditionsCtrl'
-    }).
-    when('/tenday', {
-      templateUrl: 'partials/tenday',
-      controller: 'TenDayCtrl'
-    }).
-    when('/webcams', {
-      templateUrl: 'partials/webcams',
-      controller: 'WebCamsCtrl'
-    }).
-    otherwise({
-      redirectTo: '/'
-    });
-});

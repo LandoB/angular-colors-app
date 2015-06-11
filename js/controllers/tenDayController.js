@@ -1,5 +1,4 @@
-app.controller('TenDayCtrl', function($scope){
-	$scope.colors = "This is the TenDayCtrl";
+app.controller('TendayCtrl', ['$scope', function($scope){
+  $scope.title='Ten Day Forecast';
 
-
-})
+}]);
