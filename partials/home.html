@@ -1,0 +1,8 @@
+		<div class="col-md-12 colors">
+				<p class="title(ng-show="colors")"></p>
+				<div id="colors" class="row">
+					<div class="col-sm-12.col-md-4" ng-repeat='color in colors'>
+						<p ng-click='colorClick(color)' style='background-color: {{color}}'> {{ color }}</p>
+					</div>
+				</div>
+		</div>

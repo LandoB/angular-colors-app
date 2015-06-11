@@ -1,0 +1,20 @@
+/* --- Fonts selection ---*/
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata);
+
+body {
+	padding: 10px 30px;
+	font-family: 'Nunito', Helvetica;
+}
+
+.colors {
+	text-align: center;
+	font-size: 2em;
+}
+
+.colors:hover,
+.colors:focus,
+.colors:active {
+		color: #FFFFCC;
+		text-shadow: 1px 1px #112222;
+		background-color: rgba(0,0,0,0.65);
+}
